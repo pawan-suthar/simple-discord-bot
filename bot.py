@@ -6,7 +6,7 @@ from discord.ext.commands import context
 
 client = commands.Bot(command_prefix = '!')
 
-bot_token = "OTE4NTI3NTAyMjQxMTAzODcz.YbIjZQ.W6Zrmc5keYHsn4HJU-hgzYZTCo4"
+bot_token = "YOUR BOT TOKEN"
   
 #bot ready
 @client.event
@@ -33,18 +33,18 @@ async def ping(ctx):
 #to send msg 
 @client.command()
 async def hello(ctx):
-    if str(ctx.author) == "_king_icon_#1796":
+    if str(ctx.author) == "_king_icon_#1796": #this is my discord username 
         await ctx.send(f" hello {ctx.author}")
         
 #to send pics        
 @client.command()
 async def pic(ctx):
-    await ctx.send(file=discord.File("bbb.jpg"))
+    await ctx.send(file=discord.File("PIC PATH"))
 
 #to send links 
 @client.command()
 async def link(url):
-    await url.send("https://koders.in/#/")
+    await url.send("LINK YO WANT TO SEND")
     
 #show list of all commands
 @client.command()
